@@ -3,10 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hacktober Fest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>Hacktober Fest by adiksha sood</title>
+    <br>
+    <h5> By Adiksha Sood</h5>
+
+    <br>
+    <br>
+
 </head>
 <body>
-    <h1>Contribute here for the hacktober fest </h1>//also mention the name of coder ed,md sahil khan
-    <p>This is an open source project for those who want to contribute</p>
+    <!--<h1>Contribute here for the hacktober fest </h1>//also mention the name of coder ed,md sahil khan
+    <p>This is an open source project for those who want to contribute</p> -->
+
+   <br><br>
+  
+  
+  
+	  <div  style="text-align: center">
+	    <i class="material-icons" style="font-size: 75px; color: #666;">forum</i></span>
+		<br>
+		<h2 style="color: #666;">Contact Us</h2>
+		<br>
+		<p class="text-center" style="color:#444;">Have any Questions? Feel free to contact our Tech Support</p>
+		<br>
+		<button type="submit" class="btn btn-outline-dark ml-sm-2 mb-2" style="border-radius: 50px" data-toggle="modal" data-target="#contact">&emsp;&emsp;Contact Support&emsp;&emsp;</button>
+	  </div>
+	  
+		
+		
+	  </div>
+	</div>
+  </div>
+  
+  <!--Contact Modal-->
+  <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title text-light" id="exampleModalLabel">We would love to hear from you!!</h5>
+        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="form  my-3 mr-2 ml-2">
+		  <div class="form-row"> 
+			<div class="form-group col-sm">
+			  <label for="exampleInputEmail1" style="color: #fff;">Enter Name</label>
+			  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First">
+			</div>
+			<div class="form-group col-sm">
+			  <label class="sm-lbl" for="exampleInputEmail1" style="color:rgba(0, 0, 0, 0); visibility: hidden;">Enter Name</label>
+			  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last">
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="exampleInputEmail1" style="color: #fff;">Enter Email</label>
+			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+		  </div>
+		  <div class="form-group">
+			<label for="exampleFormControlTextarea1" style="color: #fff;">Your Query or Question</label>
+			<textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+		  </div>
+		</form>
+      </div>
+      <div class="modal-footer">
+			<button type="button" class="btn btn-outline-light ml-sm-2" style="border-radius: 50px" style="width:100%;" data-dismiss="modal" aria-label="Close">Submit</button>
+      </div>
+    </div>
+    </div>
+  </div>
+  
+ 
+
+  
+
+ 
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="js.js"></script>
+  
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+  
+  <script>
+    $('#carouselExample').on('slide.bs.carousel', function (e) {
+
+    /*
+
+    CC 2.0 License Iatek LLC 2018
+    Attribution required
+    
+    */
+
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 3;
+    var totalItems = $('.carousel-item').length;
+    
+    if (idx >= totalItems-(itemsPerSlide-1)) {
+        var it = itemsPerSlide - (totalItems - idx);
+        for (var i=0; i<it; i++) {
+            // append slides to end
+            if (e.direction=="left") {
+                $('.carousel-item').eq(i).appendTo('.carousel-inner');
+            }
+            else {
+                $('.carousel-item').eq(0).appendTo('.carousel-inner');
+            }
+        }
+    }
+    });
+  </script>
+   
+  
+
 </body>
 </html>
