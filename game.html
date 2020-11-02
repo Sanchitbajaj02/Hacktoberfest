@@ -1,26 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<link rel="stylesheet" href="assets/css/style2.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hacktober Fest</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="assets/css/style2.css">
 
 </head>
-<body>
-     
-    <main style="display: flex; justify-content: center;">
+
+<body id="page-top">
+    <!-- NavBar -->
+    <nav class="navbar bg-primary navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-white js-scroll-trigger" href="/">LOGO</a>
+            <button class="navbar-toggler navbar-toggler-right font-weight-bold text-white rounded" type="button"
+                data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse text-white" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-white" href="/">HOME</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded text-white js-scroll-trigger"
+                            href="game.html">GAME</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded text-white js-scroll-trigger"
+                            href="loginpage.html">LOGIN</a>
+                    </li>
+                    <!-- <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded text-white js-scroll-trigger" href="Seach_box.html">Search
+              Box</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded text-white js-scroll-trigger" href="signup.html">Signup</a>
+          </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main style="display: flex; justify-content: center; margin-top: 150px;">
 
         <br>
         <button onclick="startGame()">Start</button>
         <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">FLY</button>
-        
+
     </main>
-        
-        <p>Use the FLY button to stay in the air</p><br>
-        <p>How long can you stay alive?</p>
-    
-<footer>Made with ❤️ by <a href="https://github.com/charchit95">CHARCHIT BANSAL</a></footer>
-    
-    
+
+    <p>Use the FLY button to stay in the air</p><br>
+    <p>How long can you stay alive?</p>
+
+    <footer>Made with ❤️ by <a href="https://github.com/charchit95">CHARCHIT BANSAL</a></footer>
+
+
     <script src="js/game.js"></script>
 </body>
+
 </html>

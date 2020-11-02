@@ -1,10 +1,58 @@
 <html>
-<title>
-    Login
-</title>
-<link rel="stylesheet" type="text/css" href="assets/css/login.css">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/login.css">
+
+    <style>
+        .loginbox{
+            margin-top: 150px;
+        }
+    </style>
+    
+</head>
 
 <body>
+    <nav class="navbar bg-primary navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-white js-scroll-trigger" href="/">LOGO</a>
+            <button class="navbar-toggler navbar-toggler-right font-weight-bold text-white rounded" type="button"
+                data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse text-white" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-white" href="/">HOME</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded text-white js-scroll-trigger"
+                            href="game.html">GAME</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded text-white js-scroll-trigger"
+                            href="loginpage.html">LOGIN</a>
+                    </li>
+                    <!-- <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded text-white js-scroll-trigger" href="Seach_box.html">Search
+              Box</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded text-white js-scroll-trigger" href="signup.html">Signup</a>
+          </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="loginPage">
         <div class="loginbox">
             <div class="loginHeader">
@@ -16,7 +64,7 @@
                 <p>Password:</p> <input type="password" name="" placeholder="Enter Password"><br><br>
                 <input type="submit" name="" value="Login"><br><br>
                 <a href="forgotPassword.html"> Forgot Password?</a><br>
-                <a href="#"> Don't have an account?</a>
+                <a href="./signup.html"> Don't have an account?</a>
 
             </form>
 
@@ -24,8 +72,4 @@
     </div>
 </body>
 
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 74ebf1f918c455b7ea8c3e3a3f44bcd7e1b2cbc7
