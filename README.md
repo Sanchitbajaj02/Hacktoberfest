@@ -57,3 +57,7 @@ After commiting your work into the local repository write this command to bring 
 After pushing it to the repository make PR(pull request) to add those changes into main branch.
 
 I'm happy to add valid pull request into this repository🥰.
+
+# My Changes:
+
+I have changed the registration form of this page, and made it more attractive and responsive.

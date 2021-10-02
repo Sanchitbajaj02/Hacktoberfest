@@ -1,51 +1,71 @@
-<Html>
-<head> 
-<title>
-Registration Page
-</title>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/registerstyle.css" />
+    <title>Registration Form</title>
 </head>
-<body bgcolor="Lightskyblue">
-<br>
-<br>
-<form>
 
-<label> Firstname </label>       
-<input type="text" name="firstname" size="15"/> <br> <br>
-<label> Middlename: </label>   
-<input type="text" name="middlename" size="15"/> <br> <br>
-<label> Lastname: </label>       
-<input type="text" name="lastname" size="15"/> <br> <br>
+<body class="formBody">
+    <h1 class="formTitle">Registration Form</h1>
+    <div class = "createAccount">
+        <div class="createAccount__left">
+            <form class="studentForm">
+                <div class="inputBlock">
+                    <label class="inputBlock__label"><b>Enter your First Name</b></label>
+                    <input class="inputBlock__input" type="text" />
+                </div>
+                <div class="inputBlock">
+                    <label class="inputBlock__label"><b>Enter your Last Name</b></label>
+                    <input class="inputBlock__input" type="text" />
+                </div>
+                <div class="inputBlock">
+                    <label class="inputBlock__label"><b>Enter your Date of Birth</b></label>
+                    <input class="inputBlock__input" type="date" />
+                </div>
+                <div class="inputBlock">
+                    <label class="inputBlock__label"><b>Enter your Email</b></label>
+                    <input class="inputBlock__input" type="email" />
+                </div>
+                <div class="inputBlock">
+                    <label class="inputBlock__label"><b>Enter your Mobile Number</b></label>
+                    <input class="inputBlock__input" type="tel" />
+                </div>
+                <div class="inputBlock">
+                    <label class="inputBlock__label"><b>Enter Password</b></label>
+                    <div>
+                        <div class="passwordInputBox">
+                            <input id="passwordinput" class="inputBlock__input inputBlock__password" type="password" />
+                            <div class="inputBlock__input__button"><img src="images/hidden.svg" alt="" /></div>
+    
+                        </div>
+                        <p class="extraLabel">Password must be 8 characters or longer</label>
+                    </div>
+                </div>
+                <div class="inputBlock">
+                    <label class="inputBlock__label"><b>Confirm Password</b></label>
+                    <div>
+                        <div class="passwordInputBox">
+                            <input id="passwordinput" class="inputBlock__input inputBlock__password" type="password" />
+                            <div class="inputBlock__input__button"><img src="images/hidden.svg" alt="" /></div>
+    
+                        </div>
+                    </div>
+                </div>
+                <button class="createAccount__left_submit">
+                    <p>
+                        Create Account
+                    </p>
+                </button>
+            </form>
+        </div>
+        
+    </div>
 
-<label> 
-Course :
-</label> 
-<select>
-<option value="Course">Course</option>
-<option value="BCA">BCA</option>
-<option value="BCom">BCom</option>
-<option value="BBA">BBA</option>
-<option value="BTech">BTech</option>
-<option value="MBA">MBA</option>
-<option value="MCA">MCA</option>
-<option value="MTech">MTech</option>
-</select>
+</body>
 
-<br>
-<br>
-<label> 
-Gender :
-</label><br>
-<input type="radio" name="male"/> Male <br>
-<input type="radio" name="female"/> Female <br>
-<input type="radio" name="prefer not to say"/> Other
-<br>
-<br>
-
-<label> 
-Phone :
-</label>
-<input type="text" name="country code"  value="+91" size="2"/> 
-<input type="text" name="phone" size="10"/> <br> <br>
-Address
-<br>
-<textarea cols="80" rows="5" value="address">
+</html>

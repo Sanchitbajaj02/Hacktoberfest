@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+}
+
+.formBody {
+    background: linear-gradient(210deg,rgb(129, 4, 4),rgb(255, 187, 0));
+    
+}
+.formTitle {
+    text-align: center;
+    color: lightblue;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+.inputBlock {
+    width: 398px;
+    /* height: 69px; */
+    /* border: 1px solid black; */
+    margin: 10px;
+    margin-left: 0;
+    margin-top: 33px;
+}
+.inputBlock__label {
+    text-align: left;
+    font: normal normal bold 18px/36px Proxima Nova;
+    letter-spacing: 0px;
+    color: #192451;
+    opacity: 1;
+    font-size: 18px;
+}
+.inputBlock__input {
+    background: inherit;
+    opacity: 1;
+    width: 398px;
+    height: 34px;
+    border: none;
+    border-bottom: 1px solid black !important;
+    padding: 0;
+    font-weight: 60;
+    font-size: 20px;
+    appearance: "text-field";
+
+}
+input:focus
+{
+    outline: none;
+}
+.passwordInputBox {
+    display: flex;
+    align-items: center;
+}
+.inputBlock__password {
+    width: 374px;
+}
+.inputBlock__input__button {
+    width : 14px;
+    height: 32px;
+    align-items: center;
+    cursor: pointer;
+}
+.inputBlock__input__button > img
+{
+    width : 14px;
+    height: 32px;
+    object-fit: contain;
+    border-bottom: 1px solid black !important;
+    /* align-self: baseline !important; */
+}
+.extraLabel{
+    text-align: right;
+    font: normal normal medium 13px/36px Proxima Nova;
+    letter-spacing: 0px;
+    color: white;
+    opacity: 1;
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+
+
+.createAccount {
+    display: flex;
+
+    align-items: center;
+  }
+  
+  .createAccount__left {
+    
+    flex: 1;
+   
+    align-items: center;
+    margin-left: 85px;
+  }
+  .createAccount__left_header {
+    text-align: left;
+    font: normal normal medium 32px/67px Proxima Nova;
+    letter-spacing: 0px;
+    color: #192451;
+    opacity: 1;
+    font-size: 32px;
+    margin: 10px;
+    margin-top: 18px;
+  }
+  .createAccount__left_title {
+    text-align: left;
+    font: normal normal medium 18px/36px Proxima Nova;
+    letter-spacing: 0px;
+    color: #919194;
+    opacity: 1;
+    font-size: 18px;
+    margin: 10px;
+    margin-top: 18px;
+  }
+  .createAccount__left_submit {
+      background: #192451 0% 0% no-repeat padding-box;
+      box-shadow: 0px 1px 6px #39494C59;
+      border-radius: 4px;
+      opacity: 1;
+      margin: 10px;
+      margin-top: 18px;
+      width: 248px;
+      height: 44px;
+      margin-left: 0;
+  }
+  .createAccount__left_submit > p 
+  {
+      text-align: center;
+      letter-spacing: 1.6px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      opacity: 1;
+      font-size: 16px;
+      cursor: pointer;
+  }
+  .createAccount__right {
+    flex: 1;
+    display: grid;
+    place-items: center;
+    align-self: center;
+    
+  }
+  .createAccount__right_img {
+    object-fit: contain;
+    width: 400px;
+  
+  
+  }
+  
+  @media (max-width: 900px) {
+    .createAccount {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      /* margin-top: 100px !important; */
+      height: fit-content;
+    }
+    .createAccount__left {
+        align-items: center !important;
+        margin-left: 0;
+    }
+    .createAccount__left_submit {
+        margin-left: 0;
+    }
+  }
