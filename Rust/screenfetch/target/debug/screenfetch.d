@@ -1,0 +1,1 @@
+/home/xearch/Desktop/hactoberfest21/proj_rust_hacktoberfest/Hacktoberfest/Rust/screenfetch/target/debug/screenfetch: /home/xearch/Desktop/hactoberfest21/proj_rust_hacktoberfest/Hacktoberfest/Rust/screenfetch/src/main.rs
