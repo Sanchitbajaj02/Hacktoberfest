@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Login\Signup</title>
+
+    <title>Page Title</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    
+<div class="container">
+    
+    <div class="register">
+        <div class="login">
+          
+           <div class="content">
+            <div class="signupc">
+              <span>Sign Up</span> 
+              <p>Sign up first.</p> 
+           </div>
+           <div class="signinc">
+                <span>Sign In</span> 
+              <p>Welcome to our portal.</p> 
+           </div>            
+           </div> 
+           
+           <div class="inputs">
+            <div class="signini">
+           <form class="formin" method="post" target="#">
+            <div>
+               <span class="material-icons">
+email
+</span><input type="email" placeholder="Your email" required />
+             </div> 
+              <div>
+               <span class="material-icons">
+password
+</span><input type="password" minlength="5" maxlength="15" class="pswrdin" placeholder="Your password" required /><span class="material-icons visin" onclick="changein()">
+visibility
+</span>
+              </div> 
+              <div>
+                  <input type="submit" class="b btn" value="Sign In" onclick="showsin()" />
+                  <input type="button" class="btn" value="Sign Up" onclick="showsup()" />
+                  
+              </div> 
+              </form>
+            </div> 
+             
+            <div class="signupi">
+            <form class="formup">
+               <div>
+               <span class="material-icons">
+person
+</span><input type="text" placeholder="Username" required />
+               </div>
+               <div>
+               <span class="material-icons">
+email
+</span><input type="email" placeholder="Your email" required />
+             </div> 
+              <div>
+              <span class="material-icons">
+password
+</span> <input type="password" minlength="5" maxlength="15" class="pswrdup" placeholder="Your password" required /><span class="material-icons visup" onclick="changeup()">
+visibility
+</span>
+              </div> 
+              <div>
+                  <input type="submit" class="b btn" value="Sign Up" onclick="showsup()" />
+                  <input type="button" class="btn" value="Sign In" onclick="showsin()" />
+                  
+              </div>  
+              </form>
+            </div> 
+            
+           </div>
+           </div>
+   <div class="message" onclick="reset()">       
+   </div>
+   
+<div class="bhavesh">
+ Developed By  |  BHAVESH KRISHAN GARG   
+
+</div>
+        </div>
+
+
+
+        
+</div>
+
+<style>
+    .bhavesh{
+        padding-bottom: 100px;
+        align-content: center;
+        justify-content: center;
+        margin-left: 1100px;
+    }
+</style>
+
+
+
+
+<script src="./JS/script.js"></script>
+</body>
+</html>
